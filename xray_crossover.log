@@ -1,4 +1,4 @@
-* Detected CPU: VirtualApple @ 2.50GHz [GenuineIntel], F6/M12/S0, 999.00 mhz, 40-clk 'rdtsc'
+* Detected CPU: VirtualApple @ 2.50GHz [GenuineIntel], F6/M12/S0, 999.00 mhz, 33-clk 'rdtsc'
 * CPU features: RDTSC, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2
 * CPU cores/threads: 8/8
 
@@ -6,8 +6,8 @@ Found commandline file!
 Initializing File System...
 using fs-ltx ../fsgame.ltx
 File System Ready...
-FS: 51677 files cached 67 archives, 10900Kb memory used.
-Init FileSystem 1.400378 sec
+FS: 51690 files cached 67 archives, 10903Kb memory used.
+Init FileSystem 1.383728 sec
 'xrCore' build 9360, Sep 23 2024
 
 EH: 3CAABCFCFF6F3A810019C6A72180F166
@@ -15,9 +15,13 @@ EH: 3CAABCFCFF6F3A810019C6A72180F166
 -----loading c:/anomaly/bin/..\gamedata\configs\system.ltx [2]
 X-Ray Monolith v1.5.3
 gamedata: 'configs\axr_options.ltx'
+gamedata: 'configs\dialogs\prishlyy_trader_dialogs.ltx'
+gamedata: 'configs\dialogs\zzz_trader_dialogs.ltx'
 gamedata: 'configs\localization.ltx'
 gamedata: 'configs\misc\task\tm_prishlyy_tasks.ltx'
+gamedata: 'configs\text\rus\prishlyy_trader_dialogs.xml'
 gamedata: 'configs\text\rus\st_quests_prishlyy.xml'
+gamedata: 'scripts\prishlyy_trader_dialogs.script'
 gamedata: 'scripts\zzz_prishlyy_init.script'
 Initializing Engine...
 Starting INPUT device...
@@ -30,9 +34,9 @@ Executing config-script "user.ltx"...
 Loading DLL: xrRender_R4.dll
 Loading DLL: xrGame.dll
 * [x-ray]: Full Memory Stats
-* [win32]: free[137438779248 K], reserved[2048 K], committed[172112 K]
+* [win32]: free[137438779248 K], reserved[1984 K], committed[172176 K]
 * [ D3D ]: textures[0 K]
-* [x-ray]: process heap[45759 K]
+* [x-ray]: process heap[45795 K]
 * [x-ray]: economy: strings[29479 K], smem[0 K]
 SOUND: OpenAL: enumerate devices...
 SOUND: OpenAL: EnumerationExtension Present
@@ -75,10 +79,10 @@ Starting engine...
 intro_start intro_logo
 intro_delete ::update_logo_intro
 * [x-ray]: Full Memory Stats
-* [win32]: free[137437719300 K], reserved[11648 K], committed[1222460 K]
+* [win32]: free[137437719300 K], reserved[11840 K], committed[1222268 K]
 * [ D3D ]: textures[16 K]
-* [x-ray]: process heap[667079 K]
-* [x-ray]: economy: strings[29488 K], smem[0 K]
+* [x-ray]: process heap[666932 K]
+* [x-ray]: economy: strings[29487 K], smem[0 K]
 *  0.0 : [   4] $null
 *  0.0 : [   1] $user$NVHHGGTex
 *  0.0 : [   5] $user$NVjitterTex
@@ -798,7 +802,6 @@ intro_delete ::update_logo_intro
 *  0.0 : [   1] ui\new_game\ui_new_game_popup
 *  0.0 : [   1] ui\ui_actor_hint_wnd
 *  0.0 : [   1] ui\ui_actor_sleep_screen
-*  0.0 : [   1] ui\ui_empty
 *  0.0 : [   1] water\water_SBumpVolume
 *  0.0 : [   1] water\water_flowing_nmap
 *  0.0 : [   1] water\water_normal
@@ -855,6 +858,7 @@ intro_delete ::update_logo_intro
 *  0.0 : [   1] wm\wm_knife_wood
 *  0.0 : [   1] wm\wm_knife_wood1
 *  0.0 : [   1] wm\wm_knife_wood2
+*  1.1 : [   1] ui\ui_empty
 *  8.1 : [   1] ui\ui_magnifier2
 *  9.5 : [   1] ui\moty2018
 *  9.5 : [   1] ui\moty2019
@@ -884,87 +888,89 @@ intro_delete ::update_logo_intro
 * 32768.1 : [   1] ui\ui_icon_equipment
 "c:\anomaly\bin\anomalydx11.exe" -smap2048 
 * phase time: 0 ms
-* phase cmem: 696242 K
+* phase cmem: 696664 K
 * [x-ray]: Prefetching Data
 Loading objects...
 Loading models...
 Loading textures...
 CResourceManager::DeferredUpload -> START, size = 1062
-texture loading time: 7569
+texture loading time: 7304
 * [x-ray]: Prefetched Data
-* [prefetch] time:   8259 ms
-* [prefetch] memory: 33650Kb
+* [prefetch] time:   7997 ms
+* [prefetch] memory: 33761Kb
 S.T.A.L.K.E.R. Anomaly version 1.5.3
 using marshal library
 prishlyy: dispatcher installed
 # Loading ini: misc\smart_profiles.ltx
 end setup
-* phase time: 9515 ms
-* phase cmem: 743592 K
-* phase time: 17 ms
-* phase cmem: 743592 K
+* phase time: 9230 ms
+* phase cmem: 744110 K
+* phase time: 15 ms
+* phase cmem: 744110 K
 * Creating new game...
 * Loading spawn registry...
 * 18652 spawn points are successfully loaded
 not warfare
 * New game is successfully created!
-* phase time: 1822 ms
-* phase cmem: 929148 K
+* phase time: 1809 ms
+* phase cmem: 929442 K
 * phase time: 48 ms
-* phase cmem: 929148 K
+* phase cmem: 929442 K
 * phase time: 23 ms
-* phase cmem: 929150 K
+* phase cmem: 929442 K
 * client : connection accepted - <All Ok>
-* phase time: 28 ms
-* phase cmem: 929188 K
+* phase time: 29 ms
+* phase cmem: 929480 K
 * phase time: 27 ms
-* phase cmem: 929188 K
-* phase time: 36 ms
-* phase cmem: 929226 K
+* phase cmem: 929480 K
+* phase time: 35 ms
+* phase cmem: 929514 K
 * phase time: 47 ms
-* phase cmem: 935334 K
+* phase cmem: 935624 K
 * [Loading VB] 116 verts, 3 Kb
 * [Loading IB] 246 indices, 0 Kb
-* phase time: 25 ms
-* phase cmem: 935334 K
-* phase time: 23 ms
-* phase cmem: 935334 K
-* phase time: 27 ms
-* phase cmem: 935334 K
- WARNING: Occlusion map 'c:/anomaly/bin/..\gamedata\levels\fake_start\level.hom' not found.
+* phase time: 29 ms
+* phase cmem: 935624 K
 * phase time: 24 ms
-* phase cmem: 935334 K
+* phase cmem: 935624 K
+* phase time: 27 ms
+* phase cmem: 935624 K
+ WARNING: Occlusion map 'c:/anomaly/bin/..\gamedata\levels\fake_start\level.hom' not found.
+* phase time: 25 ms
+* phase cmem: 935624 K
 * phase time: 23 ms
-* phase cmem: 935334 K
-* phase time: 28 ms
-* phase cmem: 935334 K
-CResourceManager::DeferredUpload -> START, size = 1082
-texture loading time: 1448
-* t-report - base: 1081, 852689 K
+* phase cmem: 935624 K
+* phase time: 24 ms
+* phase cmem: 935624 K
+CResourceManager::DeferredUpload -> START, size = 1074
+texture loading time: 1429
+* t-report - base: 1073, 842319 K
 * t-report - lmap: 1, 1024 K
-* phase time: 3372 ms
-* phase cmem: 939316 K
-* phase time: 61 ms
-* phase cmem: 939335 K
+* phase time: 3354 ms
+* phase cmem: 939675 K
+* phase time: 46 ms
+* phase cmem: 939694 K
 * [x-ray]: Full Memory Stats
-* [win32]: free[137437379196 K], reserved[8896 K], committed[1565316 K]
-* [ D3D ]: textures[911719 K]
-* [x-ray]: process heap[939335 K]
-* [x-ray]: economy: strings[37228 K], smem[49893 K]
+* [win32]: free[137437377080 K], reserved[8448 K], committed[1567880 K]
+* [ D3D ]: textures[903397 K]
+* [x-ray]: process heap[939694 K]
+* [x-ray]: economy: strings[37235 K], smem[49893 K]
 DRX SL current storyline task: drx_sl_esc_m_trader_start_game_1
 DRX questlines are successfuly set for [stalker] faction
 !WARNING treasure_manager.init_settings | item [journal] is missing info | kind: i_tool - tier: nil
 CRandomTask:give_task() task_id[prishlyy_find_buryy]
 giver_id nil
 prishlyy: task 'prishlyy_find_buryy' given
+prishlyy: give_game_news fallback called (delay=%d dur=%d)
 prishlyy: init flag set.
 ~ Ironman | player turned it off!
 * Saving spawns...
 * Saving objects...
-* 21743 objects are successfully saved
+* 21643 objects are successfully saved
 * Game Player - autosave.scop is successfully saved to file 'c:/anomaly/bin/..\appdata\savedgames\player - autosave.scop'
-collectgarbage before=51113732Kb
-collectgarbage after=24442933Kb
+collectgarbage before=49914706Kb
+collectgarbage after=24398103Kb
+! Can't find texture 'ui_icons_npc\pda'
 - Disconnect
 - Destroying level
 *  0.0 : [   4] $null
@@ -1104,6 +1110,7 @@ collectgarbage after=24442933Kb
 *  0.1 : [   1] wpn\wpn_vss\wpn_vss_bump#
 *  0.1 : [   1] wpn\pistols\wpn_pm\wpn_pm_bump#
 *  0.1 : [   1] wpn\wpn_grenade_rdg-m_bump#
+*  0.1 : [   1] ui_icons_npc\pda
 *  0.2 : [   1] item\item_pda_lp\item_pda_bump#
 *  0.2 : [   1] ui\ui_console
 *  0.4 : [   2] glow\glow_rays
@@ -1112,7 +1119,6 @@ collectgarbage after=24442933Kb
 *  0.7 : [   2] pfx\pfx_step_blood
 *  1.1 : [   2] pfx\snowo
 *  1.1 : [   1] shaders\smaa\search_tex
-*  1.1 : [   1] ui\ui_empty
 *  1.4 : [   2] ghost_particles\eft_style\empty
 *  1.4 : [   2] glow\glow_orange2
 *  1.4 : [   2] pfx\pfx_bubble
@@ -1228,8 +1234,8 @@ collectgarbage after=24442933Kb
 *  6.1 : [   5] sky\af3_a_cloudy\06-00#small
 *  6.1 : [   6] sky\af3_a_cloudy\07-00#small
 *  6.1 : [   6] sky\af3_a_cloudy\08-00#small
-*  6.1 : [  28] sky\af3_a_cloudy\09-00#small
-*  6.1 : [   7] sky\af3_a_cloudy\10-00#small
+*  6.1 : [  29] sky\af3_a_cloudy\09-00#small
+*  6.1 : [   8] sky\af3_a_cloudy\10-00#small
 *  6.1 : [   9] sky\af3_a_cloudy\11-00#small
 *  6.1 : [   5] sky\af3_a_cloudy\12-00#small
 *  6.1 : [   8] sky\af3_a_cloudy\13-00#small
@@ -1451,8 +1457,8 @@ collectgarbage after=24442933Kb
 * 24.1 : [   2] sky\swtc_dark\05-00-storm#small
 * 24.1 : [   1] sky\swtc_dark\06-00-cloudy-dark#small
 * 24.1 : [   1] sky\swtc_dark\07-00-cloudy-light-rain#small
-* 24.1 : [   2] sky\swtc_dark\09-00-cloudy-dark-rain#small
-* 24.1 : [   2] sky\swtc_dark\10-00-cloudy-light-rain#small
+* 24.1 : [   1] sky\swtc_dark\09-00-cloudy-dark-rain#small
+* 24.1 : [   1] sky\swtc_dark\10-00-cloudy-light-rain#small
 * 24.1 : [   1] sky\swtc_dark\11-00-storm#small
 * 24.1 : [   3] sky\swtc_dark\13-00-cloudy-dark#small
 * 24.1 : [   1] sky\swtc_dark\15-00-storm#small
@@ -1615,7 +1621,6 @@ collectgarbage after=24442933Kb
 * 128.1 : [   2] pfx\pfx_spark_01
 * 128.1 : [   1] prop\prop_voda1
 * 128.1 : [   2] shoker_mod\pfx\pfx_ak_shells_1
-* 128.1 : [   1] ui\new_game\ui_new_game_factions
 * 128.1 : [   1] ui\ui_font_graff_32_1024
 * 128.1 : [   1] ui\ui_font_letter_25_1024
 * 170.6 : [   1] wpn\wpn_upgrade
@@ -1862,10 +1867,6 @@ collectgarbage after=24442933Kb
 * 1024.1 : [   2] pfx\pfx_explotions_smoke_benzine
 * 1024.1 : [   2] shoker_mod\explosions\final_expl
 * 1024.1 : [   5] sky\sky_oblaka
-* 1024.1 : [   1] ui\new_game\ui_new_game_back_t
-* 1024.1 : [   1] ui\new_game\ui_new_game_main
-* 1024.1 : [   1] ui\new_game\ui_new_game_maps_1
-* 1024.1 : [   1] ui\new_game\ui_new_game_popup
 * 1024.1 : [   1] ui\ui_actor_dialog_screen
 * 1024.1 : [   1] ui\ui_actor_loadgame_screen
 * 1024.1 : [   1] ui\ui_actor_mp_screen
@@ -1967,8 +1968,8 @@ collectgarbage after=24442933Kb
 * 3072.1 : [   5] sky\af3_a_cloudy\06-00
 * 3072.1 : [   6] sky\af3_a_cloudy\07-00
 * 3072.1 : [   6] sky\af3_a_cloudy\08-00
-* 3072.1 : [  28] sky\af3_a_cloudy\09-00
-* 3072.1 : [   7] sky\af3_a_cloudy\10-00
+* 3072.1 : [  29] sky\af3_a_cloudy\09-00
+* 3072.1 : [   8] sky\af3_a_cloudy\10-00
 * 3072.1 : [   9] sky\af3_a_cloudy\11-00
 * 3072.1 : [   5] sky\af3_a_cloudy\12-00
 * 3072.1 : [   8] sky\af3_a_cloudy\13-00
@@ -2077,8 +2078,8 @@ collectgarbage after=24442933Kb
 * 3072.1 : [   1] sky\swtc_cloudy_light\20-30-cloudy-light
 * 3072.1 : [   2] sky\swtc_dark\05-00-storm
 * 3072.1 : [   1] sky\swtc_dark\07-00-cloudy-light-rain
-* 3072.1 : [   2] sky\swtc_dark\09-00-cloudy-dark-rain
-* 3072.1 : [   2] sky\swtc_dark\10-00-cloudy-light-rain
+* 3072.1 : [   1] sky\swtc_dark\09-00-cloudy-dark-rain
+* 3072.1 : [   1] sky\swtc_dark\10-00-cloudy-light-rain
 * 3072.1 : [   1] sky\swtc_dark\11-00-storm
 * 3072.1 : [   3] sky\swtc_dark\13-00-cloudy-dark
 * 3072.1 : [   1] sky\swtc_dark\15-00-storm
@@ -2112,7 +2113,6 @@ collectgarbage after=24442933Kb
 * 4096.1 : [   1] shaders\gasmasks\mask_nm_7
 * 4096.1 : [   1] shaders\gasmasks\mask_nm_8
 * 4096.1 : [   1] shaders\gasmasks\mask_nm_9
-* 4096.1 : [   1] ui\ui_actor_portrets
 * 4096.1 : [   1] ui\ui_options
 * 4096.1 : [   1] wpn\wpn_l85\wpn_l85
 * 4180.0 : [   2] pfx\pfx_anomaly_19
@@ -2124,7 +2124,7 @@ collectgarbage after=24442933Kb
 * 8192.1 : [   1] ui\ui_actor_menu
 * 32768.1 : [   1] ui\ui_icon_equipment
 * 32768.1 : [   1] ui\ui_icon_equipment_hide
-* [ D3D ]: textures[911779 K]
+* [ D3D ]: textures[903457 K]
 *  0.0 : [   4] $null
 *  0.0 : [   1] $user$NVHHGGTex
 *  0.0 : [   5] $user$NVjitterTex
@@ -2268,7 +2268,6 @@ collectgarbage after=24442933Kb
 *  0.7 : [   2] pfx\pfx_step_blood
 *  1.1 : [   2] pfx\snowo
 *  1.1 : [   1] shaders\smaa\search_tex
-*  1.1 : [   1] ui\ui_empty
 *  1.4 : [   2] ghost_particles\eft_style\empty
 *  1.4 : [   2] glow\glow_orange2
 *  1.4 : [   2] pfx\pfx_bubble
@@ -2383,8 +2382,8 @@ collectgarbage after=24442933Kb
 *  6.1 : [   5] sky\af3_a_cloudy\06-00#small
 *  6.1 : [   6] sky\af3_a_cloudy\07-00#small
 *  6.1 : [   6] sky\af3_a_cloudy\08-00#small
-*  6.1 : [  28] sky\af3_a_cloudy\09-00#small
-*  6.1 : [   7] sky\af3_a_cloudy\10-00#small
+*  6.1 : [  29] sky\af3_a_cloudy\09-00#small
+*  6.1 : [   8] sky\af3_a_cloudy\10-00#small
 *  6.1 : [   9] sky\af3_a_cloudy\11-00#small
 *  6.1 : [   5] sky\af3_a_cloudy\12-00#small
 *  6.1 : [   8] sky\af3_a_cloudy\13-00#small
@@ -2605,8 +2604,8 @@ collectgarbage after=24442933Kb
 * 24.1 : [   2] sky\swtc_dark\05-00-storm#small
 * 24.1 : [   1] sky\swtc_dark\06-00-cloudy-dark#small
 * 24.1 : [   1] sky\swtc_dark\07-00-cloudy-light-rain#small
-* 24.1 : [   2] sky\swtc_dark\09-00-cloudy-dark-rain#small
-* 24.1 : [   2] sky\swtc_dark\10-00-cloudy-light-rain#small
+* 24.1 : [   1] sky\swtc_dark\09-00-cloudy-dark-rain#small
+* 24.1 : [   1] sky\swtc_dark\10-00-cloudy-light-rain#small
 * 24.1 : [   1] sky\swtc_dark\11-00-storm#small
 * 24.1 : [   3] sky\swtc_dark\13-00-cloudy-dark#small
 * 24.1 : [   1] sky\swtc_dark\15-00-storm#small
@@ -2761,7 +2760,6 @@ collectgarbage after=24442933Kb
 * 128.1 : [   2] pfx\pfx_spark_01
 * 128.1 : [   1] prop\prop_voda1
 * 128.1 : [   2] shoker_mod\pfx\pfx_ak_shells_1
-* 128.1 : [   1] ui\new_game\ui_new_game_factions
 * 128.1 : [   1] ui\ui_font_graff_32_1024
 * 128.1 : [   1] ui\ui_font_letter_25_1024
 * 170.6 : [   1] wpn\wpn_upgrade
@@ -2985,10 +2983,6 @@ collectgarbage after=24442933Kb
 * 1024.1 : [   2] pfx\pfx_explotions_smoke_benzine
 * 1024.1 : [   2] shoker_mod\explosions\final_expl
 * 1024.1 : [   5] sky\sky_oblaka
-* 1024.1 : [   1] ui\new_game\ui_new_game_back_t
-* 1024.1 : [   1] ui\new_game\ui_new_game_main
-* 1024.1 : [   1] ui\new_game\ui_new_game_maps_1
-* 1024.1 : [   1] ui\new_game\ui_new_game_popup
 * 1024.1 : [   1] ui\ui_actor_dialog_screen
 * 1024.1 : [   1] ui\ui_actor_loadgame_screen
 * 1024.1 : [   1] ui\ui_actor_mp_screen
@@ -3088,8 +3082,8 @@ collectgarbage after=24442933Kb
 * 3072.1 : [   5] sky\af3_a_cloudy\06-00
 * 3072.1 : [   6] sky\af3_a_cloudy\07-00
 * 3072.1 : [   6] sky\af3_a_cloudy\08-00
-* 3072.1 : [  28] sky\af3_a_cloudy\09-00
-* 3072.1 : [   7] sky\af3_a_cloudy\10-00
+* 3072.1 : [  29] sky\af3_a_cloudy\09-00
+* 3072.1 : [   8] sky\af3_a_cloudy\10-00
 * 3072.1 : [   9] sky\af3_a_cloudy\11-00
 * 3072.1 : [   5] sky\af3_a_cloudy\12-00
 * 3072.1 : [   8] sky\af3_a_cloudy\13-00
@@ -3198,8 +3192,8 @@ collectgarbage after=24442933Kb
 * 3072.1 : [   1] sky\swtc_cloudy_light\20-30-cloudy-light
 * 3072.1 : [   2] sky\swtc_dark\05-00-storm
 * 3072.1 : [   1] sky\swtc_dark\07-00-cloudy-light-rain
-* 3072.1 : [   2] sky\swtc_dark\09-00-cloudy-dark-rain
-* 3072.1 : [   2] sky\swtc_dark\10-00-cloudy-light-rain
+* 3072.1 : [   1] sky\swtc_dark\09-00-cloudy-dark-rain
+* 3072.1 : [   1] sky\swtc_dark\10-00-cloudy-light-rain
 * 3072.1 : [   1] sky\swtc_dark\11-00-storm
 * 3072.1 : [   3] sky\swtc_dark\13-00-cloudy-dark
 * 3072.1 : [   1] sky\swtc_dark\15-00-storm
@@ -3228,7 +3222,6 @@ collectgarbage after=24442933Kb
 * 4096.1 : [   1] shaders\gasmasks\mask_nm_7
 * 4096.1 : [   1] shaders\gasmasks\mask_nm_8
 * 4096.1 : [   1] shaders\gasmasks\mask_nm_9
-* 4096.1 : [   1] ui\ui_actor_portrets
 * 4096.1 : [   1] ui\ui_options
 * 4096.1 : [   1] wpn\wpn_l85\wpn_l85
 * 4180.0 : [   2] pfx\pfx_anomaly_19
@@ -3246,31 +3239,31 @@ using marshal library
 prishlyy: dispatcher installed
 # Loading ini: misc\smart_profiles.ltx
 end setup
-* phase time: 875 ms
-* phase cmem: 849709 K
+* phase time: 881 ms
+* phase cmem: 849852 K
 * phase time: 33 ms
-* phase cmem: 849709 K
+* phase cmem: 849852 K
 new mdata
 * Loading spawn registry...
 * 18652 spawn points are successfully loaded
 * Loading objects...
-* 21743 objects are successfully loaded
-* Game player - autosave is successfully loaded from file 'c:/anomaly/bin/..\appdata\savedgames\player - autosave.scop' (1.302s)
-* phase time: 1300 ms
-* phase cmem: 1008427 K
-* phase time: 49 ms
-* phase cmem: 1008491 K
-* phase time: 41 ms
-* phase cmem: 1008491 K
+* 21643 objects are successfully loaded
+* Game player - autosave is successfully loaded from file 'c:/anomaly/bin/..\appdata\savedgames\player - autosave.scop' (1.309s)
+* phase time: 1307 ms
+* phase cmem: 1008473 K
+* phase time: 51 ms
+* phase cmem: 1008536 K
+* phase time: 35 ms
+* phase cmem: 1008538 K
 * client : connection accepted - <All Ok>
-* phase time: 37 ms
-* phase cmem: 1008528 K
-* phase time: 47 ms
-* phase cmem: 1008528 K
-* phase time: 4390 ms
-* phase cmem: 1188297 K
-* phase time: 282 ms
-* phase cmem: 1196882 K
+* phase time: 38 ms
+* phase cmem: 1008575 K
+* phase time: 44 ms
+* phase cmem: 1008575 K
+* phase time: 4278 ms
+* phase cmem: 1188342 K
+* phase time: 287 ms
+* phase cmem: 1196917 K
 * [Loading VB] 65534 verts, 2047 Kb
 * [Loading VB] 65528 verts, 2047 Kb
 * [Loading VB] 65530 verts, 2047 Kb
@@ -3327,59 +3320,59 @@ new mdata
 * [Loading IB] 1048572 indices, 2047 Kb
 * [Loading IB] 1048575 indices, 2047 Kb [4]
 * [Loading IB] 435264 indices, 850 Kb
-* phase time: 664 ms
-* phase cmem: 1197255 K
-* phase time: 137 ms
-* phase cmem: 1207769 K
+* phase time: 672 ms
+* phase cmem: 1197276 K
+* phase time: 134 ms
+* phase cmem: 1207743 K
 * [DETAILS] VertexConsts(256), Batch(61)
 * [DETAILS] 48739 v(20), 31842 p
 * [DETAILS] Batch(61), VB(951K), IB(186K)
-* phase time: 74 ms
-* phase cmem: 1207935 K
+* phase time: 75 ms
+* phase cmem: 1207904 K
 * Loading HOM: c:/anomaly/bin/..\gamedata\levels\l01_escape\level.hom
-* phase time: 70 ms
-* phase cmem: 1208804 K
-* phase time: 43 ms
-* phase cmem: 1208804 K
-* phase time: 42 ms
-* phase cmem: 1208804 K
-CResourceManager::DeferredUpload -> START, size = 1936
-texture loading time: 5101
-* t-report - base: 1925, 1250896 K
+* phase time: 69 ms
+* phase cmem: 1208816 K
+* phase time: 41 ms
+* phase cmem: 1208816 K
+* phase time: 40 ms
+* phase cmem: 1208816 K
+CResourceManager::DeferredUpload -> START, size = 1929
+texture loading time: 4627
+* t-report - base: 1918, 1242574 K
 * t-report - lmap: 11, 11265 K
-* phase time: 6083 ms
-* phase cmem: 1228586 K
-* phase time: 181 ms
-* phase cmem: 1228586 K
+* phase time: 5433 ms
+* phase cmem: 1228555 K
+* phase time: 155 ms
+* phase cmem: 1228555 K
 * [x-ray]: Full Memory Stats
-* [win32]: free[137437053180 K], reserved[5376 K], committed[1894852 K]
-* [ D3D ]: textures[1305702 K]
-* [x-ray]: process heap[1228586 K]
-* [x-ray]: economy: strings[37087 K], smem[34345 K]
+* [win32]: free[137437053112 K], reserved[5504 K], committed[1894792 K]
+* [ D3D ]: textures[1297380 K]
+* [x-ray]: process heap[1228555 K]
+* [x-ray]: economy: strings[37080 K], smem[34345 K]
 prishlyy: already initialized (flag present)
-collectgarbage before=39165413Kb
-collectgarbage after=27898146Kb
+collectgarbage before=36772639Kb
+collectgarbage after=27691402Kb
 * [x-ray]: Full Memory Stats
-* [win32]: free[137436952444 K], reserved[12736 K], committed[1988228 K]
-* [ D3D ]: textures[1424902 K]
-* [x-ray]: process heap[1318220 K]
-* [x-ray]: economy: strings[39581 K], smem[136991 K]
+* [win32]: free[137436950328 K], reserved[11392 K], committed[1991688 K]
+* [ D3D ]: textures[1417823 K]
+* [x-ray]: process heap[1319670 K]
+* [x-ray]: economy: strings[39554 K], smem[138007 K]
 * Saving spawns...
 * Saving objects...
-* 26465 objects are successfully saved
+* 26396 objects are successfully saved
 * Game player - autosave.scop is successfully saved to file 'c:/anomaly/bin/..\appdata\savedgames\player - autosave.scop'
 - Autosaved new game
 intro_start game_loaded
 * [x-ray]: Handled Necessary Textures Destruction
-* MEMORY USAGE: 1361152 K
+* MEMORY USAGE: 1365615 K
 * End of synchronization A[1] R[1]
 intro_delete ::update_game_loaded
 ~ Warfare is not loaded, unregistered warfare callbacks
 * [x-ray]: Full Memory Stats
-* [win32]: free[137436874900 K], reserved[15488 K], committed[2063020 K]
-* [ D3D ]: textures[1445626 K]
-* [x-ray]: process heap[1387366 K]
-* [x-ray]: economy: strings[39732 K], smem[183731 K]
+* [win32]: free[137436872788 K], reserved[6208 K], committed[2074412 K]
+* [ D3D ]: textures[1454446 K]
+* [x-ray]: process heap[1395861 K]
+* [x-ray]: economy: strings[39708 K], smem[194030 K]
 - Disconnect
 - Destroying level
 *  0.0 : [   4] $null
@@ -3451,8 +3444,10 @@ intro_delete ::update_game_loaded
 *  0.0 : [   1] $user$viewport2
 *  0.0 : [   1] wpn\wpn_protecta\wpn_protecta_dots
 *  0.0 : [   1] act\act_arm_sviter_1_bump#
+*  0.0 : [   2] act\act_dogs_brown_bump#
 *  0.0 : [   1] act\act_arm_hand00_bump#
 *  0.0 : [   1] act\act_stalker_head_antigas_2_bump#
+*  0.0 : [   1] act\greshnik13rs\monster\chimera\watchman_bump#
 *  0.0 : [   1] item\item_conserva_bump#
 *  0.0 : [   1] wpn\wpn_abakan_bump#
 *  0.0 : [   1] wpn\wpn_addon_grenade_launcher_m203_bump#
@@ -3470,6 +3465,7 @@ intro_delete ::update_game_loaded
 *  0.1 : [   1] wpn\pistols\wpn_colt1911\wpn_colt1911_bump#
 *  0.1 : [   1] wpn\pistols\wpn_desert_eagle\wpn_desert_eagle_bump#
 *  0.1 : [   1] wpn\pistols\wpn_fort17\wpn_fort17_bump#
+*  0.1 : [   1] wpn\pistols\wpn_gsh18\wpn_gsh18_bump#
 *  0.1 : [   1] wpn\pistols\wpn_kiparis\wpn_kiparis_parts_bump#
 *  0.1 : [   1] wpn\pistols\wpn_oc33\wpn_oc33_bump#
 *  0.1 : [   1] wpn\pistols\wpn_pb\wpn_pb_bump#
@@ -3478,14 +3474,13 @@ intro_delete ::update_game_loaded
 *  0.1 : [   1] wpn\pistols\wpn_usp45\wpn_usp_bump#
 *  0.1 : [   1] wpn\pistols\wpn_walter99\wpn_walter99_body_bump#
 *  0.1 : [   1] wpn\pistols\wpn_walter99\wpn_walter99_mag_bump#
-*  0.1 : [   1] wpn\wpn_addons\wpn_addon_gl\wpn_addon_gl_gp25_bump#
 *  0.1 : [   1] wpn\wpn_addons\wpn_addon_gl\wpn_addon_grenade_launcher_bump#
-*  0.1 : [   1] wpn\wpn_addons\wpn_addon_lfo_lens_bump#
 *  0.1 : [   2] wpn\wpn_addons\wpn_addon_mount\wpn_addon_lastochka_bump#
 *  0.1 : [   1] wpn\wpn_addons\wpn_addon_mount\wpn_addon_mp5_mount_bump#
-*  0.1 : [   1] wpn\wpn_addons\wpn_addon_rail\wpn_addon_rail_bump#
+*  0.1 : [   2] wpn\wpn_addons\wpn_addon_rail\wpn_addon_rail_bump#
 *  0.1 : [   1] wpn\wpn_addons\wpn_addon_scope_acog\wpn_addon_scope_acog_old_bump#
 *  0.1 : [   1] wpn\wpn_addons\wpn_addon_scope_kobra_new\wpn_addon_scope_kobra_bump#
+*  0.1 : [   1] wpn\wpn_addons\wpn_addon_scope_pks-07\wpn_addon_scope_pks-07_bump#
 *  0.1 : [   1] wpn\wpn_addons\wpn_addon_scope_pso\wpn_addon_scope_pso-1m2-1_bump#
 *  0.1 : [   1] wpn\wpn_addons\wpn_addon_scope_pso\wpn_addon_scope_pso1_bump#
 *  0.1 : [   1] wpn\wpn_addons\wpn_addon_scope_pu\wpn_addon_scope_pu_bump#
@@ -3495,17 +3490,18 @@ intro_delete ::update_game_loaded
 *  0.1 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_nato_bump#
 *  0.1 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_pbs1_bump#
 *  0.1 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_pbs4_bump#
-*  0.1 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_tgp-a_bump#
+*  0.1 : [   2] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_tgp-a_bump#
 *  0.1 : [   1] wpn\wpn_addons\wpn_m1891_scope\wpn_m1891_scope_bump#
+*  0.1 : [   1] wpn\wpn_aek\wpn_aek971_bump#
 *  0.1 : [   1] wpn\wpn_ak101\wpn_ak105_body_bump#
 *  0.1 : [   1] wpn\wpn_ak101\wpn_ak105_grips_bump#
 *  0.1 : [   1] wpn\wpn_ak101\wpn_ak105_mag_bump#
-*  0.1 : [   4] wpn\wpn_ak74\wpn_ak74_bump#
-*  0.1 : [   1] wpn\wpn_ak74m\wpn_ak74m_body_bump#
-*  0.1 : [   1] wpn\wpn_ak74m\wpn_ak74m_grips_bump#
-*  0.1 : [   1] wpn\wpn_ak74m\wpn_ak74m_mag_bump#
+*  0.1 : [   3] wpn\wpn_ak74\wpn_ak74_bump#
+*  0.1 : [   1] wpn\wpn_ak74m\wpn_ak74m_bump#
+*  0.1 : [   1] wpn\wpn_ak74m\wpn_ak74m_gp_bump#
 *  0.1 : [   1] wpn\wpn_akm\wpn_akm_bump#
 *  0.1 : [   1] wpn\wpn_akm\wpn_akm_gadget_bump#
+*  0.1 : [   1] wpn\wpn_akm\wpn_akms_gadget_bump#
 *  0.1 : [   1] wpn\wpn_aks74\wpn_aks74_bump#
 *  0.1 : [   2] wpn\wpn_aksu\wpn_aksu_bump#
 *  0.1 : [   1] wpn\wpn_an94\wpn_an94_bump#
@@ -3514,7 +3510,6 @@ intro_delete ::update_game_loaded
 *  0.1 : [   1] wpn\wpn_bullet1_545_bump#
 *  0.1 : [   1] wpn\wpn_bullet1_bump#
 *  0.1 : [   1] wpn\wpn_fn2000\wpn_fn2000_bump#
-*  0.1 : [   1] wpn\wpn_fort500\wpn_fort500_bump#
 *  0.1 : [   1] wpn\wpn_g36\wpn_g36_scope_bump#
 *  0.1 : [   1] wpn\wpn_g36\wpn_g36k_bump#
 *  0.1 : [   1] wpn\wpn_grenade_f1_bump#
@@ -3530,16 +3525,18 @@ intro_delete ::update_game_loaded
 *  0.1 : [   1] wpn\wpn_m1891\wpn_m1891_wood_bump#
 *  0.1 : [   1] wpn\wpn_mp5\wpn_mp5_bump#
 *  0.1 : [   1] wpn\wpn_pkm\wpn_pkm_bump#
-*  0.1 : [   1] wpn\wpn_ppsh41\wpn_ppsh41_bump#
+*  0.1 : [   2] wpn\wpn_ppsh41\wpn_ppsh41_bump#
 *  0.1 : [   1] wpn\wpn_protecta\wpn_protecta_bump#
 *  0.1 : [   1] wpn\wpn_protecta\wpn_protecta_sights_bump#
 *  0.1 : [   1] wpn\wpn_rg6\wpn_rg6_bump#
 *  0.1 : [   1] wpn\wpn_rpg-7\wpn_rpg-7_bump#
 *  0.1 : [   1] wpn\wpn_rpg-7_bump#
+*  0.1 : [   1] wpn\wpn_scar_bullet_bump#
 *  0.1 : [   1] wpn\wpn_sig55x\wpn_sig550_bump#
 *  0.1 : [   1] wpn\wpn_sig55x\wpn_sig550_mag_bump#
 *  0.1 : [   1] wpn\wpn_sks\wpn_sks_bump#
 *  0.1 : [   1] wpn\wpn_spas12\wpn_spas12_bump#
+*  0.1 : [   1] wpn\wpn_sv98\wpn_sv98_bump#
 *  0.1 : [   1] wpn\wpn_svd\wpn_svd_body_bump#
 *  0.1 : [   1] wpn\wpn_svd\wpn_svd_grips_bump#
 *  0.1 : [   1] wpn\wpn_svd\wpn_svd_mag_bump#
@@ -3554,6 +3551,7 @@ intro_delete ::update_game_loaded
 *  0.1 : [   1] wpn\wpn_vss\wpn_vss_bump#
 *  0.1 : [   1] wpn\wpn_vz61\wpn_vz61_bump#
 *  0.1 : [   1] wpn\pistols\wpn_pm\wpn_pm_bump#
+*  0.1 : [   1] wpn\wpn_bullet1_939_bump#
 *  0.1 : [   1] wpn\wpn_grenade_rdg-m_bump#
 *  0.2 : [   1] item\item_detector_09_bump#
 *  0.2 : [   1] item\item_guitar_bump#
@@ -3562,10 +3560,9 @@ intro_delete ::update_game_loaded
 *  0.2 : [   1] item\item_pda_lp\item_pda_bump#
 *  0.2 : [   1] artifact\artifact_anim_dist
 *  0.2 : [   1] ui\ui_console
-*  0.3 : [   2] wpn\wpn_addons\wpn_addon_scope_kobra_new\wpn_addon_scope_kobra_crosshair_dot_black
+*  0.3 : [   1] wpn\wpn_addons\wpn_addon_scope_kobra_new\wpn_addon_scope_kobra_crosshair_dot_black
 *  0.4 : [   2] glow\glow_rays
 *  0.4 : [   1] map\map_nomap
-*  0.4 : [   1] wpn\wpn_type63\wpn_type63_bump#
 *  0.7 : [   2] pfx\pfx_spark_02
 *  0.7 : [   2] pfx\pfx_step_blood
 *  1.1 : [   2] pfx\snowo
@@ -3630,7 +3627,6 @@ intro_delete ::update_game_loaded
 *  4.1 : [   1] ui\cursor
 *  5.3 : [   2] amik\hit_fx\blood\m
 *  5.4 : [   2] amik\explosions\smoke128_3w
-*  5.4 : [   1] item\item_hammer
 *  5.4 : [   2] pfx\pfx_sparks
 *  5.4 : [   1] act\act_stalker_head_glass
 *  5.4 : [   2] amik\nature\stonedebris1
@@ -3695,8 +3691,8 @@ intro_delete ::update_game_loaded
 *  6.1 : [   5] sky\af3_a_cloudy\06-00#small
 *  6.1 : [   6] sky\af3_a_cloudy\07-00#small
 *  6.1 : [   6] sky\af3_a_cloudy\08-00#small
-*  6.1 : [  28] sky\af3_a_cloudy\09-00#small
-*  6.1 : [   7] sky\af3_a_cloudy\10-00#small
+*  6.1 : [  29] sky\af3_a_cloudy\09-00#small
+*  6.1 : [   8] sky\af3_a_cloudy\10-00#small
 *  6.1 : [   9] sky\af3_a_cloudy\11-00#small
 *  6.1 : [   5] sky\af3_a_cloudy\12-00#small
 *  6.1 : [   8] sky\af3_a_cloudy\13-00#small
@@ -3774,7 +3770,7 @@ intro_delete ::update_game_loaded
 * 10.7 : [   1] item\item_akvatab
 * 10.7 : [   1] item\item_antibio_chlor
 * 10.7 : [   1] item\item_antiemetic
-* 10.7 : [   1] item\item_cards
+* 10.7 : [   1] item\item_calibrate_tools
 * 10.7 : [   1] item\item_gazmask1
 * 10.7 : [   1] item\item_gazmask3
 * 10.7 : [   1] item\item_medkit
@@ -3782,7 +3778,6 @@ intro_delete ::update_game_loaded
 * 10.7 : [   1] item\item_medkit_3
 * 10.7 : [   1] item\item_medkit_4
 * 10.7 : [   1] item\item_medkit_7
-* 10.7 : [   1] item\item_nabor_young_technic
 * 10.7 : [   1] item\item_parts
 * 10.7 : [   1] item\item_rebirth
 * 10.7 : [   1] item\item_yad
@@ -3802,6 +3797,7 @@ intro_delete ::update_game_loaded
 * 10.7 : [   2] prop\prop_teapot_1
 * 10.7 : [   1] wpn\wpn_pkm_lenta
 * 10.7 : [   1] prop\prop_lampa_galogen
+* 10.7 : [   1] wpn\wpn_bullet1_939
 * 10.7 : [   2] amik\anomaly\electric_radial
 * 10.7 : [   2] amik\weapons\6ways1
 * 10.7 : [   2] amik\weapons\btr\muzzle6ways1
@@ -3833,6 +3829,8 @@ intro_delete ::update_game_loaded
 * 21.3 : [   2] mtl\mtl_truba_ch_02_bump#
 * 21.4 : [   2] pfx\pfx_sparks1
 * 21.4 : [   1] wpn\wpn_addons\wpn_addon_rail\wpn_addon_raii
+* 21.4 : [   1] wpn\wpn_addons\wpn_addon_rail\wpn_addon_rail
+* 21.4 : [   1] wpn\wpn_ammo\ammo_338_lapua
 * 21.4 : [   1] wpn\wpn_ammo\ammo_762x39_ap
 * 21.4 : [   1] wpn\wpn_ammo\ammo_762x39_fmj
 * 21.4 : [   1] wpn\wpn_ammo\ammo_762x51_ap
@@ -3840,8 +3838,8 @@ intro_delete ::update_game_loaded
 * 21.4 : [   1] wpn\wpn_ammo\ammo_792x33_ap
 * 21.4 : [   1] wpn\wpn_ammo\ammo_792x33_fmj
 * 21.4 : [   1] wpn\wpn_bullet1_545
-* 21.4 : [   8] act\act_Rat_bump
-* 21.4 : [   8] act\act_Rat_bump#
+* 21.4 : [   4] act\act_Rat_bump
+* 21.4 : [   4] act\act_Rat_bump#
 * 21.4 : [   2] act\act_controller_hit1
 * 21.4 : [   1] act\act_specnaz_glass_bump
 * 21.4 : [   1] act\act_specnaz_glass_bump#
@@ -3851,8 +3849,8 @@ intro_delete ::update_game_loaded
 * 21.4 : [   2] detail\detail_metall_det2_bump#
 * 21.4 : [   5] detail\detail_metall_det3_bump
 * 21.4 : [   5] detail\detail_metall_det3_bump#
-* 21.4 : [   8] detail\detail_skin_1_bump
-* 21.4 : [   8] detail\detail_skin_1_bump#
+* 21.4 : [  10] detail\detail_skin_1_bump
+* 21.4 : [  10] detail\detail_skin_1_bump#
 * 21.4 : [   1] detail\detail_tile_det4_bump
 * 21.4 : [   1] detail\detail_tile_det4_bump#
 * 21.4 : [   6] detail\detail_wood_det2_bump
@@ -3865,10 +3863,10 @@ intro_delete ::update_game_loaded
 * 21.4 : [   2] glow\glow_orange
 * 21.4 : [   2] glow\glow_orange_bright
 * 21.4 : [   2] glow\glow_white
+* 21.4 : [   1] item\item_calibrate_tools_bump
+* 21.4 : [   1] item\item_calibrate_tools_bump#
 * 21.4 : [   5] item\item_medkit_4_bump
 * 21.4 : [   5] item\item_medkit_4_bump#
-* 21.4 : [   1] item\item_nabor_young_technic_bump
-* 21.4 : [   1] item\item_nabor_young_technic_bump#
 * 21.4 : [   2] item\item_yad_bump
 * 21.4 : [   3] lights\lights_spot01
 * 21.4 : [   2] pfx\pfx_anomaly_1
@@ -3908,7 +3906,6 @@ intro_delete ::update_game_loaded
 * 21.4 : [   1] wm\wm_bullet_glass02
 * 21.4 : [   1] wm\wm_bullet_glass03
 * 21.4 : [   1] wm\wm_bullet_glass04
-* 21.4 : [   1] wpn\wpn_addons\wpn_mosin_scope\wpn_mosin_scope_bump#
 * 21.4 : [   1] wpn\wpn_pkm\wpn_pkm_decals
 * 21.4 : [   2] amik\weapons\dtk_4_1
 * 21.4 : [   2] new_pfx\wblood_6
@@ -3917,6 +3914,7 @@ intro_delete ::update_game_loaded
 * 21.4 : [   2] amik\explosions\ring_grey
 * 21.4 : [   2] new_pfx\wblood_4
 * 21.4 : [   2] pfx\pfx_flame
+* 21.4 : [   1] wpn\wpn_bullet1_939_bump
 * 21.4 : [   1] fx\fx_komp_screen_2
 * 24.1 : [  40] sky\skygod_night\cloudy_00-00#small
 * 24.1 : [  37] sky\swtc_clear\00-00-fm#small
@@ -3973,8 +3971,8 @@ intro_delete ::update_game_loaded
 * 24.1 : [   2] sky\swtc_dark\05-00-storm#small
 * 24.1 : [   1] sky\swtc_dark\06-00-cloudy-dark#small
 * 24.1 : [   1] sky\swtc_dark\07-00-cloudy-light-rain#small
-* 24.1 : [   2] sky\swtc_dark\09-00-cloudy-dark-rain#small
-* 24.1 : [   2] sky\swtc_dark\10-00-cloudy-light-rain#small
+* 24.1 : [   1] sky\swtc_dark\09-00-cloudy-dark-rain#small
+* 24.1 : [   1] sky\swtc_dark\10-00-cloudy-light-rain#small
 * 24.1 : [   1] sky\swtc_dark\11-00-storm#small
 * 24.1 : [   3] sky\swtc_dark\13-00-cloudy-dark#small
 * 24.1 : [   1] sky\swtc_dark\15-00-storm#small
@@ -4011,20 +4009,18 @@ intro_delete ::update_game_loaded
 * 42.7 : [   1] item\item_spalnik
 * 42.7 : [   1] aa\aa_plates
 * 42.7 : [   1] act\act_b2_tech_face
+* 42.7 : [   2] act\act_dog_red
+* 42.7 : [   2] act\act_dogs_bulterer
 * 42.7 : [   1] act\act_eyeball_fgn
-* 42.7 : [   2] act\act_rat01
-* 42.7 : [   2] act\act_ratn1
 * 42.7 : [   2] act\act_ratn2
 * 42.7 : [   2] act\act_ratn3
 * 42.7 : [   1] act\act_ryukzak
 * 42.7 : [   1] act\act_sold_bandan_head_3
-* 42.7 : [   1] act\act_sold_bandan_head_7
 * 42.7 : [   1] act\act_stalker_face1
 * 42.7 : [   1] act\act_stalker_head_antigas_2
 * 42.7 : [   1] act\act_stalker_head_antigas_9
 * 42.7 : [   1] drink\drink_flask2
 * 42.7 : [   1] drink\drink_match0
-* 42.7 : [   1] food\food_protein
 * 42.7 : [   2] glow\glow_fire1_soc
 * 42.7 : [   1] item\[stayler]\w_medkin1
 * 42.7 : [   1] item\[stayler]\w_medkin2
@@ -4043,9 +4039,11 @@ intro_delete ::update_game_loaded
 * 42.7 : [   1] item\item_ustroystva
 * 42.7 : [   1] item\item_x_files
 * 42.7 : [   1] item\med_bank
-* 42.7 : [   1] item\part\prt_o_ballistic_7
+* 42.7 : [   1] item\part\prt_i_plastic
+* 42.7 : [   1] item\part\prt_o_ballistic_1
+* 42.7 : [   1] item\part\prt_o_fabrics_1
 * 42.7 : [   1] item\part\prt_o_fabrics_2
-* 42.7 : [   1] item\part\prt_o_retardant_1
+* 42.7 : [   1] item\part\prt_o_retardant_10
 * 42.7 : [   1] lfo\lftrees_byaka1
 * 42.7 : [   3] mtl\mtl_lampa_pod_01
 * 42.7 : [   2] pfx\pfx_light3
@@ -4061,10 +4059,10 @@ intro_delete ::update_game_loaded
 * 42.7 : [   2] prop\prop_spade
 * 42.7 : [   1] repair\repair_ramrod
 * 42.7 : [   1] wpn\pistols\wpn_walter99\wpn_walter99_mag
-* 42.7 : [   1] wpn\wpn_ak74m\wpn_ak74m_grips
 * 42.7 : [   1] wpn\wpn_fn2000\wpn_fn2000_lens
 * 42.7 : [   1] wpn\wpn_fn2000_lens
 * 42.7 : [   1] wpn\wpn_protecta\wpn_protecta_sights
+* 42.7 : [   1] wpn\wpn_scar_bullet
 * 42.7 : [   2] amik\explosions\smoke_cannon
 * 42.7 : [   2] amik\weapons\12x70
 * 42.7 : [   2] amik\weapons\flame\flameshoot_3
@@ -4082,7 +4080,7 @@ intro_delete ::update_game_loaded
 * 42.7 : [   2] pfx\pfx_smokepuffs1
 * 42.7 : [   2] shoker_mod\pfx\pfx_shells1
 * 42.7 : [   2] shoker_mod\pfx\pfx_shells2
-* 42.7 : [   1] wpn\wpn_addons\wpn_addon_rail\wpn_addon_rail_bump
+* 42.7 : [   2] wpn\wpn_addons\wpn_addon_rail\wpn_addon_rail_bump
 * 42.7 : [   1] wpn\wpn_bullet1_545_bump
 * 42.7 : [   1] item\item_pda2\item_pda2_label_bump
 * 42.7 : [   2] mtl\mtl_arm_2_bump
@@ -4137,18 +4135,13 @@ intro_delete ::update_game_loaded
 * 85.3 : [   2] mtl\mtl_pod_green_bump#
 * 85.3 : [   2] wood\wood_collect_bump#
 * 85.3 : [   1] act\act_face_01
-* 85.3 : [   1] act\act_face_08
 * 85.3 : [   1] act\act_face_her9
 * 85.3 : [   1] act\act_face_mask_01
 * 85.3 : [   1] act\act_face_mask_02
-* 85.3 : [   1] act\act_face_mask_03
 * 85.3 : [   1] act\act_face_mask_07
 * 85.3 : [   1] act\act_faces_1_03
 * 85.3 : [   1] act\act_mutant_boar_grill
-* 85.3 : [   1] act\act_soldier_bandana1
-* 85.3 : [   1] act\act_stalker_soldief_7
 * 85.3 : [   1] act\act_stalker_soldier_1
-* 85.3 : [   1] act\act_stalker_soldier_6
 * 85.3 : [   1] item\item_stims
 * 85.3 : [   1] wpn\wpn_addons\wpn_addon_mount\wpn_addon_lastochka
 * 85.3 : [   1] wpn\wpn_addons\wpn_addon_mount\wpn_addon_lastochkb
@@ -4158,13 +4151,15 @@ intro_delete ::update_game_loaded
 * 85.3 : [   1] act\act_b2_tech_face_bump#
 * 85.3 : [   4] act\act_cat_bump
 * 85.3 : [   4] act\act_cat_bump#
+* 85.3 : [   2] act\act_dog_red_bump
+* 85.3 : [   2] act\act_dog_red_bump#
+* 85.3 : [   2] act\act_dogs_bulterer_bump
+* 85.3 : [   2] act\act_dogs_bulterer_bump#
 * 85.3 : [   1] act\act_head_mask_bump
 * 85.3 : [   1] act\act_head_mask_bump#
-* 85.3 : [   1] act\act_ryukzak_bump
+* 85.3 : [   2] act\act_ryukzak_bump
 * 85.3 : [   1] act\act_sold_bandan_head_3_bump
 * 85.3 : [   1] act\act_sold_bandan_head_3_bump#
-* 85.3 : [   1] act\act_sold_bandan_head_7_bump
-* 85.3 : [   1] act\act_sold_bandan_head_7_bump#
 * 85.3 : [   1] act\act_stalker_dolg_3_bump
 * 85.3 : [   1] act\act_stalker_dolg_3_bump#
 * 85.3 : [   1] act\act_stalker_face1_bump
@@ -4179,7 +4174,7 @@ intro_delete ::update_game_loaded
 * 85.3 : [   2] detail\detail_metall_det2_bump
 * 85.3 : [   1] detail\detail_metall_det2_v2
 * 85.3 : [   5] detail\detail_metall_det3
-* 85.3 : [   8] detail\detail_skin_1
+* 85.3 : [  10] detail\detail_skin_1
 * 85.3 : [   1] detail\detail_tile_det4
 * 85.3 : [   6] detail\detail_wood_det2
 * 85.3 : [   1] door\door_trader_bump#
@@ -4243,9 +4238,11 @@ intro_delete ::update_game_loaded
 * 85.3 : [   2] wood\wood_table_01_bump#
 * 85.3 : [   2] wood\wood_walls8_bump#
 * 85.3 : [   1] wpn\pistols\wpn_walter99\wpn_walter99_mag_bump
+* 85.3 : [   1] wpn\wpn_ammo\ammo_357_jhp
 * 85.3 : [   1] wpn\wpn_pkm_mounted_bump
 * 85.3 : [   1] wpn\wpn_pkm_mounted_bump#
 * 85.3 : [   1] wpn\wpn_protecta\wpn_protecta_sights_bump
+* 85.3 : [   1] wpn\wpn_scar_bullet_bump
 * 85.3 : [   1] wpn\wpn_vog_bump
 * 85.3 : [   2] amik\explosions\explosion_dynamite\smoke
 * 85.3 : [   2] amik\explosions\smoke_white_tiled3
@@ -4256,6 +4253,7 @@ intro_delete ::update_game_loaded
 * 115.0 : [   3] sky\swtc_storm\15-00-storm#small
 * 115.0 : [   1] sky\swtc_storm\20-00-storm#small
 * 128.1 : [   1] act\act_crow
+* 128.1 : [   1] act\act_ryukzac
 * 128.1 : [   2] amik\weapons\grishik\357mag
 * 128.1 : [   2] amik\weapons\grishik\50_ae
 * 128.1 : [   2] amik\weapons\grishik\5x45x39
@@ -4327,7 +4325,6 @@ intro_delete ::update_game_loaded
 * 128.1 : [   1] prop\prop_kitchen_krujka
 * 128.1 : [   1] prop\prop_voda1
 * 128.1 : [   1] prop\prop_voda2
-* 128.1 : [   1] repair\repair_armor_repair_fa
 * 128.1 : [   1] repair\repair_cleaning_kit_r7
 * 128.1 : [   1] repair\repair_grease_solvent
 * 128.1 : [   1] repair\repair_gun_oil
@@ -4344,28 +4341,28 @@ intro_delete ::update_game_loaded
 * 170.6 : [   1] act\act_stalker_nebo_1
 * 170.6 : [   1] act\act_zombie_1
 * 170.6 : [   1] act\act_zombie_2
+* 170.6 : [   1] act\new_stalker\t_guerilla
 * 170.6 : [   1] item\item_xxxporn
 * 170.6 : [   2] wpn\wpn_upgrade
-* 170.6 : [   2] act\act_ca2
+* 170.6 : [   2] act\act_ca3
 * 170.6 : [   2] act\act_cat2
 * 170.6 : [   1] act\act_face_fgn
 * 170.6 : [   1] act\act_new_details_01
 * 170.6 : [   2] act\act_plot
 * 170.6 : [   2] act\act_plot_u
-* 170.6 : [   1] act\act_stalker_bandit1b
-* 170.6 : [   1] act\act_stalker_bandit_1
-* 170.6 : [   1] act\act_stalker_bandit_5c
-* 170.6 : [   1] act\act_stalker_neutral1a
-* 170.6 : [   1] act\act_stalker_neutral1b
-* 170.6 : [   1] act\act_stalker_neutral1d
+* 170.6 : [   1] act\act_stalker_bandit1a
+* 170.6 : [   1] act\act_stalker_bandit3a
+* 170.6 : [   1] act\act_stalker_bandit_2
+* 170.6 : [   1] act\act_stalker_bandit_3a
+* 170.6 : [   1] act\act_stalker_bandit_4a
+* 170.6 : [   1] act\act_stalker_neutral1c
 * 170.6 : [   1] act\act_stalker_neutral1e
 * 170.6 : [   1] act\act_stalker_neutral1f
-* 170.6 : [   1] act\act_stalker_neutral2a
 * 170.6 : [   1] act\act_stalker_neutral2c
 * 170.6 : [   1] act\act_stalker_neutral_1
 * 170.6 : [   1] act\act_stalker_neutral_1e
-* 170.6 : [   1] act\act_stalker_sandit_2
 * 170.6 : [   1] act\act_stalker_soldier_4
+* 170.6 : [   1] act\act_stalker_soldier_b
 * 170.6 : [   1] act\act_zombie_3
 * 170.6 : [   1] act\npc_remeik\act_stalker_nebo_girl
 * 170.6 : [   1] act\npc_remeik\val_face
@@ -4384,11 +4381,12 @@ intro_delete ::update_game_loaded
 * 170.6 : [   1] wpn\pistols\wpn_kiparis\wpn_kiparis_mag
 * 170.6 : [   1] wpn\pistols\wpn_walter99\wpn_walter99_body
 * 170.6 : [   1] wpn\wpn_addon_grenade_launcher_m203
-* 170.6 : [   1] wpn\wpn_addons\wpn_addon_gl\wpn_addon_gl_gp25
 * 170.6 : [   1] wpn\wpn_addons\wpn_addon_mount\wpn_addon_mp5_mount
 * 170.6 : [   1] wpn\wpn_addons\wpn_addon_scope_1p29\wpn_addon_scope_1p29
 * 170.6 : [   1] wpn\wpn_addons\wpn_addon_scope_acog\wpn_addon_scope_acog_old
+* 170.6 : [   1] wpn\wpn_addons\wpn_addon_scope_pks-07\wpn_addon_scope_pks-07
 * 170.6 : [   1] wpn\wpn_addons\wpn_addon_scope_po4x34\wpn_addon_scope_po4x34
+* 170.6 : [   1] wpn\wpn_addons\wpn_addon_scope_pso\wpn_addon_sil_tgp-a
 * 170.6 : [   1] wpn\wpn_addons\wpn_addon_scope_susat\wpn_addon_scope_susat
 * 170.6 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_45
 * 170.6 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_9mx
@@ -4399,7 +4397,7 @@ intro_delete ::update_game_loaded
 * 170.6 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_tgp-a
 * 170.6 : [   1] wpn\wpn_ak101\wpn_ak105_grips
 * 170.6 : [   1] wpn\wpn_ak101\wpn_ak105_mag
-* 170.6 : [   1] wpn\wpn_ak74m\wpn_ak74m_mag
+* 170.6 : [   1] wpn\wpn_ak74m\wpn_ak74m_gp
 * 170.6 : [   1] wpn\wpn_ammo
 * 170.6 : [   1] wpn\wpn_bullet1
 * 170.6 : [   1] wpn\wpn_gauss
@@ -4417,23 +4415,17 @@ intro_delete ::update_game_loaded
 * 170.6 : [   7] detail\detail_metall_det2_v_bump
 * 170.6 : [   1] act\act_face_01_bump
 * 170.6 : [   1] act\act_face_01_bump#
-* 170.6 : [   1] act\act_face_08_bump
-* 170.6 : [   1] act\act_face_08_bump#
 * 170.6 : [   1] act\act_face_her9_bump
 * 170.6 : [   1] act\act_face_her9_bump#
 * 170.6 : [   1] act\act_face_mask_01_bump
 * 170.6 : [   1] act\act_face_mask_01_bump#
 * 170.6 : [   1] act\act_face_mask_02_bump
 * 170.6 : [   1] act\act_face_mask_02_bump#
-* 170.6 : [   1] act\act_face_mask_03_bump
-* 170.6 : [   1] act\act_face_mask_03_bump#
 * 170.6 : [   1] act\act_faces_1_03_bump
 * 170.6 : [   1] act\act_faces_1_03_bump#
 * 170.6 : [   1] act\act_mutant_boar_grill_bump
 * 170.6 : [   1] act\act_mutant_boar_grill_bump#
-* 170.6 : [   1] act\act_soldier_bandana1_bump
-* 170.6 : [   1] act\act_soldier_bandana1_bump#
-* 170.6 : [   2] act\act_stalker_soldier_1_bump
+* 170.6 : [   1] act\act_stalker_soldier_1_bump
 * 170.6 : [   1] act\act_stalker_soldier_2_bump
 * 170.6 : [   2] amik\explosions\boom_0
 * 170.6 : [   2] amik\explosions\boom_1
@@ -4451,7 +4443,7 @@ intro_delete ::update_game_loaded
 * 170.6 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_9mm_bump
 * 170.6 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_aps_bump
 * 213.8 : [   1] fx\fx_wood_fire
-* 256.1 : [   1] act\act_ryukzak_bump#
+* 256.1 : [   2] act\act_ryukzak_bump#
 * 256.1 : [   1] act\act_specna1
 * 256.1 : [   1] act\act_stalker_soldier_2
 * 256.1 : [   2] amik\explosions\explosion_flash_atlas
@@ -4549,8 +4541,6 @@ intro_delete ::update_game_loaded
 * 256.1 : [   1] prop\prop_voda1_bump#
 * 256.1 : [   1] prop\prop_voda2_bump
 * 256.1 : [   1] prop\prop_voda2_bump#
-* 256.1 : [   1] repair\repair_armor_repair_fa_bump
-* 256.1 : [   1] repair\repair_armor_repair_fa_bump#
 * 256.1 : [   1] repair\repair_cleaning_kit_bump
 * 256.1 : [   1] repair\repair_cleaning_kit_bump#
 * 256.1 : [   1] repair\repair_cleaning_kit_r7_bump
@@ -4590,6 +4580,7 @@ intro_delete ::update_game_loaded
 * 341.1 : [   2] prop\prop_ballon2
 * 341.1 : [   1] wpn\wpn_addons\wpn_addon_scope_kobra_new\wpn_addon_scope_kobra
 * 341.1 : [   1] wpn\wpn_svt40\wpn_svt40
+* 341.1 : [   2] act\act_dogs_big_bump#
 * 341.1 : [   1] act\act_mutant_boar_bump
 * 341.1 : [   1] act\act_mutant_boar_bump#
 * 341.1 : [   1] act\act_newdetail_bump
@@ -4598,12 +4589,15 @@ intro_delete ::update_game_loaded
 * 341.1 : [   2] act\act_plot_bump#
 * 341.1 : [   2] act\act_plot_u_bump
 * 341.1 : [   2] act\act_plot_u_bump#
-* 341.1 : [   1] act\act_stalker_bandit_3a_bump
-* 341.1 : [   1] act\act_stalker_bandit_3a_bump#
-* 341.1 : [   9] act\act_stalker_hero_bump
+* 341.1 : [   1] act\act_stalker_bandit_2_bump
+* 341.1 : [   1] act\act_stalker_bandit_3_bump
+* 341.1 : [   1] act\act_stalker_bandit_3_bump#
+* 341.1 : [   2] act\act_stalker_bandit_3a_bump
+* 341.1 : [   2] act\act_stalker_bandit_3a_bump#
+* 341.1 : [   6] act\act_stalker_hero_bump
 * 341.1 : [   1] act\act_stalker_nebo_1_bump
 * 341.1 : [   1] act\act_stalker_nebo_1_bump#
-* 341.1 : [   3] act\act_stalker_neutral_2_bump
+* 341.1 : [   2] act\act_stalker_neutral_2_bump
 * 341.1 : [   1] act\act_stalker_sviter_bump
 * 341.1 : [   1] act\act_stalker_sviter_bump#
 * 341.1 : [   1] act\act_stalker_trader_1_bump
@@ -4635,10 +4629,10 @@ intro_delete ::update_game_loaded
 * 341.1 : [   1] wpn\pistols\wpn_kiparis\wpn_kiparis_mag_bump
 * 341.1 : [   1] wpn\pistols\wpn_walter99\wpn_walter99_body_bump
 * 341.1 : [   1] wpn\wpn_addon_grenade_launcher_m203_bump
-* 341.1 : [   1] wpn\wpn_addons\wpn_addon_gl\wpn_addon_gl_gp25_bump
 * 341.1 : [   1] wpn\wpn_addons\wpn_addon_mount\wpn_addon_mp5_mount_bump
 * 341.1 : [   1] wpn\wpn_addons\wpn_addon_scope_1p29\wpn_addon_scope_1p29_bump
 * 341.1 : [   1] wpn\wpn_addons\wpn_addon_scope_acog\wpn_addon_scope_acog_old_bump
+* 341.1 : [   1] wpn\wpn_addons\wpn_addon_scope_pks-07\wpn_addon_scope_pks-07_bump
 * 341.1 : [   1] wpn\wpn_addons\wpn_addon_scope_po4x34\wpn_addon_scope_po4x34_bump
 * 341.1 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_45_bump
 * 341.1 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_9mx_bump
@@ -4646,11 +4640,10 @@ intro_delete ::update_game_loaded
 * 341.1 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_nato_bump
 * 341.1 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_pbs1_bump
 * 341.1 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_pbs4_bump
-* 341.1 : [   1] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_tgp-a_bump
+* 341.1 : [   2] wpn\wpn_addons\wpn_addon_silencer\wpn_addon_sil_tgp-a_bump
 * 341.1 : [   1] wpn\wpn_ak101\wpn_ak105_grips_bump
 * 341.1 : [   1] wpn\wpn_ak101\wpn_ak105_mag_bump
-* 341.1 : [   1] wpn\wpn_ak74m\wpn_ak74m_grips_bump
-* 341.1 : [   1] wpn\wpn_ak74m\wpn_ak74m_mag_bump
+* 341.1 : [   1] wpn\wpn_ak74m\wpn_ak74m_gp_bump
 * 341.1 : [   1] wpn\wpn_bolt_bump
 * 341.1 : [   1] wpn\wpn_bullet1_bump
 * 341.1 : [   1] wpn\wpn_grenade_f1_bump
@@ -4663,12 +4656,12 @@ intro_delete ::update_game_loaded
 * 459.5 : [   1] sky\swtc_storm\17-00-storm#small
 * 512.1 : [   1] act\act_atach
 * 512.1 : [   1] act\act_faction_badges_tfw
-* 512.1 : [   1] act\act_plotmisery
 * 512.1 : [   2] act\act_puh
 * 512.1 : [   1] act\act_stalker
 * 512.1 : [   1] act\act_stalker_dolg_8_8_
 * 512.1 : [   1] act\act_stalker_neutral_2
-* 512.1 : [   2] act\act_stalker_soldier_1_bump#
+* 512.1 : [   1] act\act_stalker_soldier_1_bump#
+* 512.1 : [   1] act\act_stalker_vandit_exo
 * 512.1 : [   2] amik\explosions\explosion_fuelcan\boom_1
 * 512.1 : [   2] amik\weapons\00
 * 512.1 : [   2] amik\weapons\grishik\45
@@ -4701,8 +4694,11 @@ intro_delete ::update_game_loaded
 * 512.1 : [   1] wpn\wpn_bolt
 * 554.7 : [   2] pfx\pfx_ligth_6
 * 682.2 : [   1] act\act_arm_sviter_1
+* 682.2 : [   2] act\act_dogs_big
+* 682.2 : [   2] act\act_dogs_brown
 * 682.2 : [   1] act\act_stalker_sviter
 * 682.2 : [   1] act\act_stalker_trader_1
+* 682.2 : [   1] act\greshnik13rs\monster\chimera\watchman
 * 682.2 : [   1] door\door_trader
 * 682.2 : [   2] fozest\smoke02
 * 682.2 : [   1] item\item_detector_09
@@ -4719,6 +4715,7 @@ intro_delete ::update_game_loaded
 * 682.2 : [   1] wpn\pistols\wpn_beretta\wpn_beretta
 * 682.2 : [   1] wpn\pistols\wpn_colt1911\wpn_colt1911
 * 682.2 : [   1] wpn\pistols\wpn_desert_eagle\wpn_desert_eagle
+* 682.2 : [   1] wpn\pistols\wpn_gsh18\wpn_gsh18
 * 682.2 : [   1] wpn\pistols\wpn_kiparis\wpn_kiparis_parts
 * 682.2 : [   1] wpn\pistols\wpn_oc33\wpn_oc33
 * 682.2 : [   1] wpn\pistols\wpn_pb\wpn_pb
@@ -4733,22 +4730,21 @@ intro_delete ::update_game_loaded
 * 682.2 : [   1] wpn\wpn_addons\wpn_addon_scope_pso\wpn_addon_scope_pso1
 * 682.2 : [   1] wpn\wpn_addons\wpn_addon_scope_pu\wpn_addon_scope_pu
 * 682.2 : [   1] wpn\wpn_addons\wpn_m1891_scope\wpn_m1891_scope
-* 682.2 : [   1] wpn\wpn_addons\wpn_mosin_scope\wpn_mosin_scope
+* 682.2 : [   1] wpn\wpn_aek\wpn_aek971
 * 682.2 : [   1] wpn\wpn_ak101\wpn_ak105_body
 * 682.2 : [   1] wpn\wpn_ak74\wpn_ak74
 * 682.2 : [   1] wpn\wpn_ak74\wpn_ak74_sk1
-* 682.2 : [   1] wpn\wpn_ak74\wpn_ak74_sk6
 * 682.2 : [   1] wpn\wpn_ak74\wpn_ak74_sk7
-* 682.2 : [   1] wpn\wpn_ak74m\wpn_ak74m_body
+* 682.2 : [   1] wpn\wpn_ak74m\wpn_ak74m
 * 682.2 : [   1] wpn\wpn_akm\wpn_akm
 * 682.2 : [   1] wpn\wpn_akm\wpn_akm_gadget
+* 682.2 : [   1] wpn\wpn_akm\wpn_akms_gadget
 * 682.2 : [   1] wpn\wpn_aks74\wpn_aks74
 * 682.2 : [   1] wpn\wpn_aksu\wpn_aksu
 * 682.2 : [   1] wpn\wpn_aksu\wpn_aksu_sk6
 * 682.2 : [   1] wpn\wpn_an94\wpn_an94
 * 682.2 : [   1] wpn\wpn_binokl
 * 682.2 : [   1] wpn\wpn_fn2000\wpn_fn2000
-* 682.2 : [   1] wpn\wpn_fort500\wpn_fort500
 * 682.2 : [   1] wpn\wpn_g36\wpn_g36
 * 682.2 : [   1] wpn\wpn_g36\wpn_g36_scope
 * 682.2 : [   1] wpn\wpn_groza\wpn_groza
@@ -4762,12 +4758,14 @@ intro_delete ::update_game_loaded
 * 682.2 : [   1] wpn\wpn_pkm\wpn_pkm
 * 682.2 : [   1] wpn\wpn_pkm\wpn_pkm_magazin
 * 682.2 : [   1] wpn\wpn_ppsh41\wpn_ppsh41
+* 682.2 : [   1] wpn\wpn_ppsh41\wpn_ppsh41_sk3
 * 682.2 : [   1] wpn\wpn_protecta\wpn_protecta
 * 682.2 : [   1] wpn\wpn_rg6\wpn_rg6
 * 682.2 : [   1] wpn\wpn_rpg-7
 * 682.2 : [   1] wpn\wpn_rpg-7\wpn_rpg-7
 * 682.2 : [   1] wpn\wpn_sig55x\wpn_sig550
 * 682.2 : [   1] wpn\wpn_spas12\wpn_spas12
+* 682.2 : [   1] wpn\wpn_sv98\wpn_sv98
 * 682.2 : [   1] wpn\wpn_svd\wpn_svd_body
 * 682.2 : [   1] wpn\wpn_svd\wpn_svd_grips
 * 682.2 : [   1] wpn\wpn_toz-194\wpn_toz-194
@@ -4778,7 +4776,6 @@ intro_delete ::update_game_loaded
 * 682.2 : [   1] wpn\wpn_vss\wpn_vss
 * 682.2 : [   1] wpn\wpn_vz61\wpn_vz61
 * 682.2 : [   2] mtl\mtl_truba_pod_01
-* 682.2 : [   1] wpn\wpn_type63\wpn_type63
 * 682.2 : [   1] act\act_arm_hand00_bump
 * 682.2 : [   1] act\act_stalker_soldier_2_bump#
 * 682.2 : [   2] ghost_particles\shells\r_pop\12ga
@@ -4808,8 +4805,9 @@ intro_delete ::update_game_loaded
 * 768.1 : [   2] sky\swtc_clear\05-00
 * 768.1 : [   1] sky\swtc_cloudy_light\06-00-cloudy-dark
 * 768.1 : [   1] sky\swtc_dark\06-00-cloudy-dark
-* 1024.1 : [   9] act\act_stalker_hero_bump#
-* 1024.1 : [   3] act\act_stalker_neutral_2_bump#
+* 1024.1 : [   1] act\act_stalker_bandit_2_bump#
+* 1024.1 : [   6] act\act_stalker_hero_bump#
+* 1024.1 : [   2] act\act_stalker_neutral_2_bump#
 * 1024.1 : [   1] act\npc_remeik\val_hair
 * 1024.1 : [   2] amik\explosions\decal_concrete
 * 1024.1 : [   2] amik\explosions\explo_end
@@ -4865,7 +4863,6 @@ intro_delete ::update_game_loaded
 * 1024.1 : [   1] ui\ui_pda2
 * 1024.1 : [   1] ui\ui_pda2_noice
 * 1024.1 : [   1] water\water_SBumpVolume
-* 1024.1 : [   1] wpn\wpn_addons\wpn_addon_lfo_lens_bump
 * 1024.1 : [   1] wpn\wpn_crosshair_class
 * 1024.1 : [   1] wpn\wpn_crosshair_fn2000
 * 1024.1 : [   1] wpn\wpn_crosshair_gauss
@@ -4880,6 +4877,9 @@ intro_delete ::update_game_loaded
 * 1364.3 : [   1] wpn\wpn_sks\wpn_sks
 * 1364.3 : [   1] wpn\wpn_svu\wpn_svu-a
 * 1364.3 : [   1] act\act_arm_sviter_1_bump
+* 1364.3 : [   2] act\act_dogs_big_bump
+* 1364.3 : [   2] act\act_dogs_brown_bump
+* 1364.3 : [   1] act\greshnik13rs\monster\chimera\watchman_bump
 * 1364.3 : [   1] item\item_detector_09_bump
 * 1364.3 : [   1] item\item_guitar_bump
 * 1364.3 : [   1] item\item_pda2\item_pda2_bump
@@ -4895,6 +4895,7 @@ intro_delete ::update_game_loaded
 * 1364.3 : [   2] wood\wood_walls8_bump
 * 1364.3 : [   1] wpn\pistols\wpn_colt1911\wpn_colt1911_bump
 * 1364.3 : [   1] wpn\pistols\wpn_desert_eagle\wpn_desert_eagle_bump
+* 1364.3 : [   1] wpn\pistols\wpn_gsh18\wpn_gsh18_bump
 * 1364.3 : [   1] wpn\pistols\wpn_kiparis\wpn_kiparis_parts_bump
 * 1364.3 : [   1] wpn\pistols\wpn_oc33\wpn_oc33_bump
 * 1364.3 : [   1] wpn\pistols\wpn_pb\wpn_pb_bump
@@ -4910,18 +4911,18 @@ intro_delete ::update_game_loaded
 * 1364.3 : [   1] wpn\wpn_addons\wpn_addon_scope_pu\wpn_addon_scope_pu_bump
 * 1364.3 : [   1] wpn\wpn_addons\wpn_addon_scope_susat\wpn_addon_scope_susat_bump
 * 1364.3 : [   1] wpn\wpn_addons\wpn_m1891_scope\wpn_m1891_scope_bump
-* 1364.3 : [   1] wpn\wpn_addons\wpn_mosin_scope\wpn_mosin_scope_bump
+* 1364.3 : [   1] wpn\wpn_aek\wpn_aek971_bump
 * 1364.3 : [   1] wpn\wpn_ak101\wpn_ak105_body_bump
-* 1364.3 : [   4] wpn\wpn_ak74\wpn_ak74_bump
-* 1364.3 : [   1] wpn\wpn_ak74m\wpn_ak74m_body_bump
+* 1364.3 : [   3] wpn\wpn_ak74\wpn_ak74_bump
+* 1364.3 : [   1] wpn\wpn_ak74m\wpn_ak74m_bump
 * 1364.3 : [   1] wpn\wpn_akm\wpn_akm_bump
 * 1364.3 : [   1] wpn\wpn_akm\wpn_akm_gadget_bump
+* 1364.3 : [   1] wpn\wpn_akm\wpn_akms_gadget_bump
 * 1364.3 : [   1] wpn\wpn_aks74\wpn_aks74_bump
 * 1364.3 : [   2] wpn\wpn_aksu\wpn_aksu_bump
 * 1364.3 : [   1] wpn\wpn_an94\wpn_an94_bump
 * 1364.3 : [   1] wpn\wpn_binokl_bump
 * 1364.3 : [   1] wpn\wpn_fn2000\wpn_fn2000_bump
-* 1364.3 : [   1] wpn\wpn_fort500\wpn_fort500_bump
 * 1364.3 : [   1] wpn\wpn_g36\wpn_g36k_bump
 * 1364.3 : [   1] wpn\wpn_groza\wpn_groza_bump
 * 1364.3 : [   1] wpn\wpn_groza\wpn_groza_grenade_launcher_bump
@@ -4935,13 +4936,14 @@ intro_delete ::update_game_loaded
 * 1364.3 : [   1] wpn\wpn_mp5\wpn_mp5_bump
 * 1364.3 : [   1] wpn\wpn_pkm\wpn_pkm_bump
 * 1364.3 : [   1] wpn\wpn_pkm\wpn_pkm_magazin_bump
-* 1364.3 : [   1] wpn\wpn_ppsh41\wpn_ppsh41_bump
+* 1364.3 : [   2] wpn\wpn_ppsh41\wpn_ppsh41_bump
 * 1364.3 : [   1] wpn\wpn_protecta\wpn_protecta_bump
 * 1364.3 : [   1] wpn\wpn_rg6\wpn_rg6_bump
 * 1364.3 : [   1] wpn\wpn_rpg-7\wpn_rpg-7_bump
 * 1364.3 : [   1] wpn\wpn_rpg-7_bump
 * 1364.3 : [   1] wpn\wpn_sig55x\wpn_sig550_bump
 * 1364.3 : [   1] wpn\wpn_spas12\wpn_spas12_bump
+* 1364.3 : [   1] wpn\wpn_sv98\wpn_sv98_bump
 * 1364.3 : [   1] wpn\wpn_svd\wpn_svd_body_bump
 * 1364.3 : [   1] wpn\wpn_svd\wpn_svd_grips_bump
 * 1364.3 : [   1] wpn\wpn_toz-194\wpn_toz-194_bump
@@ -4952,7 +4954,6 @@ intro_delete ::update_game_loaded
 * 1364.3 : [   1] wpn\wpn_vss\wpn_vss_bump
 * 1364.3 : [   1] wpn\wpn_vz61\wpn_vz61_bump
 * 1364.4 : [   2] mtl\mtl_truba_ch_02_bump
-* 1364.4 : [   1] wpn\wpn_type63\wpn_type63_bump
 * 1364.9 : [   2] pfx\pfx_smoke_b
 * 1876.7 : [   2] pfx\pfx_anomaly_88
 * 1877.4 : [   2] glow\glow_fire1
@@ -4991,8 +4992,8 @@ intro_delete ::update_game_loaded
 * 3072.1 : [   5] sky\af3_a_cloudy\06-00
 * 3072.1 : [   6] sky\af3_a_cloudy\07-00
 * 3072.1 : [   6] sky\af3_a_cloudy\08-00
-* 3072.1 : [  28] sky\af3_a_cloudy\09-00
-* 3072.1 : [   7] sky\af3_a_cloudy\10-00
+* 3072.1 : [  29] sky\af3_a_cloudy\09-00
+* 3072.1 : [   8] sky\af3_a_cloudy\10-00
 * 3072.1 : [   9] sky\af3_a_cloudy\11-00
 * 3072.1 : [   5] sky\af3_a_cloudy\12-00
 * 3072.1 : [   8] sky\af3_a_cloudy\13-00
@@ -5101,8 +5102,8 @@ intro_delete ::update_game_loaded
 * 3072.1 : [   1] sky\swtc_cloudy_light\20-30-cloudy-light
 * 3072.1 : [   2] sky\swtc_dark\05-00-storm
 * 3072.1 : [   1] sky\swtc_dark\07-00-cloudy-light-rain
-* 3072.1 : [   2] sky\swtc_dark\09-00-cloudy-dark-rain
-* 3072.1 : [   2] sky\swtc_dark\10-00-cloudy-light-rain
+* 3072.1 : [   1] sky\swtc_dark\09-00-cloudy-dark-rain
+* 3072.1 : [   1] sky\swtc_dark\10-00-cloudy-light-rain
 * 3072.1 : [   1] sky\swtc_dark\11-00-storm
 * 3072.1 : [   3] sky\swtc_dark\13-00-cloudy-dark
 * 3072.1 : [   1] sky\swtc_dark\15-00-storm
@@ -5150,7 +5151,7 @@ intro_delete ::update_game_loaded
 * 8192.1 : [   1] ui\ui_actor_menu
 * 32768.1 : [   1] ui\ui_icon_equipment
 * 32768.1 : [   1] ui\ui_icon_equipment_hide
-* [ D3D ]: textures[1075431 K]
+* [ D3D ]: textures[1083227 K]
 DestroySingleton::RefCounter: 0 [2]
 Input:  1
 Config-file [c:/anomaly/bin/..\appdata\user.ltx] saved successfully
